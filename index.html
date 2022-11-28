@@ -10,6 +10,13 @@
 <body>
 	<h1> Form demo </h1>
 	<!-- Standardinställningen för ett formulär är att skicka datan inuti formuläret till samma URL. Dvs index.html -->
+
+	<div class="menu">
+		<label for="toggle-menu"> Öppna meny </label>
+		<input id="toggle-menu" type="checkbox" checked />
+		<div class="actual-menu"> Jag är synlig ibland </div>
+	</div>
+
 	<form>
 		<p> Skriv in dina personuppgifter! </p>
 		<div class="form-layout">
@@ -22,10 +29,20 @@
 			<input id="input-phone" type="text" value="" placeholder="070-123 456 78" />
 		</div>
 
+		<div class="form-layout">
+			<div>
+				<input id="input-newsletter" type="checkbox" value="" checked />
+				<label for="input-newsletter"> Ja, jag vill ha nyhetsbrevet </label>
+			</div>
+		</div>
+		
+
+
 		<button type="submit"> <strong>Spara</strong> datan </button>
 		<button type="reset"> Rensa datan </button>
+		<!-- type="button" används med JavaScript -->
 		<button type="button"> Jag är helt vanlig </button>
-		<input type="submit" value="Använd inte den här" />
+		<!-- <input type="submit" value="Använd inte den här" /> -->
 	</form>
 </body>
 </html>

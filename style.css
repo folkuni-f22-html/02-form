@@ -13,15 +13,48 @@ input::placeholder {
 	color: hotpink;
 	/* background-color: lightgray; */
 }
-input {
+/* input[type="text"] {
 	min-width: 20em;
-}
+} */
 label {
 	font-weight: bold;
 }
+input[type="checkbox"] + label {
+	font-weight: normal; /* unset går också */
+}
+
 .form-layout {
 	display: flex;
 	flex-direction: column;
 	padding: 0.5em 0em;
-	border: 1px solid black;
+	border: 2px dotted black;
+}
+input[type="checkbox"] {
+	/* Väldigt lite styling fungerar på en checkbox */
+	/* border: 4px dashed red;
+	padding: 1em;
+	display: block; */
+	
+}
+
+button:hover,
+input[type="checkbox"]:hover,
+input[type="checkbox"] + label:hover {
+	cursor: pointer;
+}
+
+/* 
+x y    <- släkting, ancestor/descendant
+x > y  <- barn, parent/child
+x + y  <- syskon, sibling (direkt efter)
+x ~ y  <- syskon (flera steg
+*/
+
+
+/* Pure CSS menu */
+.actual-menu {
+	visibility: hidden;
+}
+#toggle-menu:checked + .actual-menu {
+	visibility: visible;
 }
