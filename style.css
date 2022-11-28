@@ -19,7 +19,8 @@ input::placeholder {
 label {
 	font-weight: bold;
 }
-input[type="checkbox"] + label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
 	font-weight: normal; /* unset går också */
 }
 
@@ -39,7 +40,9 @@ input[type="checkbox"] {
 
 button:hover,
 input[type="checkbox"]:hover,
-input[type="checkbox"] + label:hover {
+input[type="checkbox"] + label:hover,
+input[type="radio"]:hover,
+input[type="radio"] + label:hover {
 	cursor: pointer;
 }
 
