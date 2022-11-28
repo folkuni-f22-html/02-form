@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Form demo </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1> Form demo </h1>
+	<!-- Standardinställningen för ett formulär är att skicka datan inuti formuläret till samma URL. Dvs index.html -->
+	<form>
+		<p> Skriv in dina personuppgifter! </p>
+		<div class="form-layout">
+			<label for="input-name"> Namn </label>
+			<input id="input-name" type="text" value="" placeholder="Kalle Svensson" />
+		</div>
+
+		<div class="form-layout">
+			<label for="input-phone"> Telefonnummer </label>
+			<input id="input-phone" type="text" value="" placeholder="070-123 456 78" />
+		</div>
+
+		<button type="submit"> <strong>Spara</strong> datan </button>
+		<button type="reset"> Rensa datan </button>
+		<button type="button"> Jag är helt vanlig </button>
+		<input type="submit" value="Använd inte den här" />
+	</form>
+</body>
+</html>

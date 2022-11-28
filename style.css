@@ -1,0 +1,27 @@
+body {
+	font-size: 135%;
+}
+
+form {
+	background-color: #F59462;
+	padding: 1em;
+}
+input, button {
+	font-size: 100%;
+}
+input::placeholder {
+	color: hotpink;
+	/* background-color: lightgray; */
+}
+input {
+	min-width: 20em;
+}
+label {
+	font-weight: bold;
+}
+.form-layout {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5em 0em;
+	border: 1px solid black;
+}
