@@ -3,7 +3,7 @@ body {
 }
 
 form {
-	background-color: #F59462;
+	background-color: #e2bba8;
 	padding: 1em;
 }
 input, button {
@@ -16,6 +16,28 @@ input::placeholder {
 /* input[type="text"] {
 	min-width: 20em;
 } */
+input:invalid {
+	/* background-color: pink; */
+	border-right: 0.5em solid red;
+}
+input:valid {
+	border-right: 0.5em solid rgb(16, 117, 16);
+}
+
+.error-message {
+	visibility: hidden;
+	/* display: none; */
+	margin: 0em;
+	font-size: 90%;
+	color: rgb(117, 16, 16);
+}
+input:invalid + .error-message {
+	visibility: visible;
+	/* display: block; */
+}
+
+
+
 label {
 	font-weight: bold;
 }

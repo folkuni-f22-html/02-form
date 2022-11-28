@@ -21,17 +21,22 @@
 		<p> Skriv in dina personuppgifter! </p>
 		<div class="form-layout">
 			<label for="input-name"> Namn </label>
-			<input id="input-name" type="text" value="" placeholder="Kalle Svensson" />
+			<input id="input-name" type="text" value="" placeholder="Kalle Svensson" required />
+			<p class="error-message"> Var vänlig skriv ditt namn. </p>
 		</div>
 
 		<div class="form-layout">
 			<label for="input-phone"> Telefonnummer </label>
-			<input id="input-phone" type="text" value="" placeholder="070-123 456 78" />
+			<input id="input-phone" type="text" value="" placeholder="070-123 456 78" required minlength="8" maxlength="16" />
+			<p class="error-message"> Var vänlig skriv ditt telefonnummer med 10 siffror. </p>
 		</div>
 
 		<div class="form-layout">
+			<label for="newsletter-age"> Hur gammal är du? </label>
+			<input id="newsletter-age" type="number" required min="12" />
+			
 			<div>
-				<input id="input-newsletter" type="checkbox" value="" checked />
+				<input id="input-newsletter" type="checkbox" value="" />
 				<label for="input-newsletter"> Ja, jag vill ha nyhetsbrevet </label>
 			</div>
 		</div>
@@ -39,7 +44,7 @@
 		<div class="form-layout">
 			<label>Hur många nyheter vill du ha?</label>
 			<div>
-				<input type="radio" name="radio-news" id="radio1" />
+				<input type="radio" name="radio-news" id="radio1" required />
 				<label for="radio1"> Alla nyheter </label>
 			</div>
 			<div>
@@ -49,6 +54,10 @@
 			<div>
 				<input type="radio" name="radio-news" id="radio3" />
 				<label for="radio3"> Bara akut information </label>
+			</div>
+			<div>
+				<input type="radio" name="radio-news" id="radio4" />
+				<label for="radio4"> Inga nyheter </label>
 			</div>
 
 		</div>
